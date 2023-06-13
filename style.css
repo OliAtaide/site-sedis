@@ -24,6 +24,7 @@
 
 body {
   color: #262626;
+  background-color: #EFF3F6;
 }
 
 main {
@@ -36,13 +37,17 @@ main {
   padding-bottom: 16px;
   border: 1px solid #dbe0e7;
 }
-.nav-acervo .form-control {
+
+.nav-acervo .form-control,
+.div-acervo .form-control {
   border: 1px solid #ebebeb;
 }
-.nav-acervo i {
+.nav-acervo i,
+.div-acervo i {
   fill: #00446b;
 }
-.nav-acervo input {
+.nav-acervo input,
+.div-acervo input {
   border: none;
   outline: none;
 }
@@ -51,7 +56,45 @@ main {
   background-color: #ffffff;
   border: 1px solid #dbe0e7;
   box-shadow: 0px 4px 64px rgba(0, 78, 141, 0.08);
-  width: 320px;
+  min-width: 320px;
+}
+.div-acervo .pagination .page-item .page-link {
+  border: 0;
+  outline: none;
+  border-radius: 8px;
+  width: 36px;
+  height: 38px;
+  color: #036B8A;
+  font-weight: 600;
+}
+.div-acervo .pagination .page-item.active .page-link {
+  background-color: #E2F3FF;
+}
+.div-acervo .acervo-main {
+  margin: 20px;
+}
+.div-acervo .acervo-main .acervo-titulo {
+  aspect-ratio: 5/1;
+  background-color: #A0C044;
+  border-radius: 16px;
+  gap: 10px;
+  opacity: 0.7;
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+}
+.div-acervo .acervo-main .acervo-titulo span {
+  font-size: 32px;
+  color: #68870F;
+}
+.div-acervo .acervo-main .botao-livro img {
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.div-acervo .texto-quantidade {
+  font-weight: 600;
+  font-size: 18px;
 }
 .div-acervo ul {
   list-style-type: none;
@@ -97,9 +140,9 @@ h1 {
   padding-bottom: 150px;
   background-color: #d9e3e9;
   background-image: url("imgs/bg.png");
-  background-size: 110vw;
+  background-size: 100vw;
   background-repeat: no-repeat;
-  background-position: -120px;
+  background-position: center;
 }
 .div-cabecalho .titulo {
   font-weight: 900;
@@ -129,9 +172,9 @@ h1 {
   font-size: 24px;
 }
 
-.div-aprendizado {
-  margin-top: 40px;
-  margin-bottom: 40px;
+.div-aprendizado,
+.div-infos {
+  background-color: white;
 }
 
 .ambientes {
@@ -172,21 +215,12 @@ h1 {
   border-radius: 4px 4px 76px 4px;
 }
 
-.div-ead {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #eff3f6;
-}
 .div-ead iframe {
   width: 100%;
   aspect-ratio: 16/9;
   border-radius: 16px;
 }
 
-.div-infos {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
 .div-infos img {
   object-fit: cover;
   width: 100%;
@@ -214,11 +248,6 @@ h1 {
   padding-right: 24px;
 }
 
-.div-noticias {
-  background-color: #eff3f6;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
 .div-noticias .noticia-1 {
   background-color: #00446b;
   border-radius: 48px 48px 4px 4px;
