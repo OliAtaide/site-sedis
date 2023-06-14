@@ -361,15 +361,8 @@ footer a {
 }
 
 /* sobre.html */
-.div-sobre,
-.div-servicos,
-.div-materiais {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.div-servicos {
-  background-color: #eff3f6;
+.div-sobre, .div-materiais, .div-apoio, .div-perguntas {
+  background-color: white;
 }
 
 .card-servico {
@@ -385,27 +378,28 @@ footer a {
   font-size: 18px;
 }
 
-.div-apoio .nav {
-  margin-bottom: 24px;
-}
-.div-apoio .nav-item {
-  border: none;
-  outline: none;
-}
-.div-apoio .collapse-field button {
+.div-apoio .collapse-field button, .div-perguntas .collapse-field button {
   border-bottom: 2px solid #36a9e1;
   font-weight: 700;
   font-size: 20px;
   text-align: start;
   border-radius: 0;
 }
-.div-apoio .collapse-field button::after {
+.div-apoio .collapse-field button::after, .div-perguntas .collapse-field button::after {
   font-family: "bootstrap-icons";
   content: "\f235";
   float: right;
 }
-.div-apoio .collapse-field button.collapsed::after {
+.div-apoio .collapse-field button.collapsed::after, .div-perguntas .collapse-field button.collapsed::after {
   content: "\f229";
+}
+
+.div-apoio .nav {
+  margin-bottom: 24px;
+}
+.div-apoio .nav-item {
+  border: none;
+  outline: none;
 }
 .div-apoio .tab-pane .d-flex {
   gap: 20px;
@@ -422,6 +416,10 @@ footer a {
   border-bottom: 2px solid #00446b;
   color: #00446b;
   border-radius: 0;
+}
+
+.social-icones i {
+  font-size: 32px;
 }
 
 /*
@@ -668,6 +666,13 @@ editais.html
   .ambiente-5 {
     border-radius: 4px 4px 4px 76px !important;
   }
+  .noticia:not(.noticia-1) {
+    flex-direction: column;
+  }
+  .noticia:not(.noticia-1) img {
+    aspect-ratio: 2/1 !important;
+    border-radius: 24px !important;
+  }
   .div-infos img {
     border-radius: 24px !important;
     aspect-ratio: 7/3;
@@ -690,9 +695,9 @@ editais.html
     gap: 20px;
   }
   .div-noticias .noticia:not(.noticia-1) img {
-    width: 240px;
-    height: 180px;
+    aspect-ratio: 5/3;
     border-radius: 8px;
+    object-fit: cover;
   }
   .div-noticias .noticia:not(.noticia-1) .titulo {
     font-weight: 700;
@@ -718,7 +723,28 @@ editais.html
   .div-contato .card {
     margin-bottom: 0;
   }
+  .div-sobre .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .div-sobre .texto-sobre {
+    order: 2;
+    width: 100% !important;
+  }
+  .div-apoio .collapse .d-flex {
+    flex-direction: column;
+  }
+  .div-apoio .collapse .d-flex img {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 7/5;
+  }
 }
 /* extra-small */
+@media screen and (max-width: 599px) {
+  .ambiente {
+    border-radius: 16px !important;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
