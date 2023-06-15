@@ -556,11 +556,10 @@ editais.html
 }
 
 /* parceiros.html */
-.div-parceiros,
-.div-interesse,
-.div-parceiros-seja {
-  padding-top: 40px;
-  padding-bottom: 40px;
+.div-parceiros .card {
+  aspect-ratio: 2/1;
+  border: 4px solid #00446B;
+  border-radius: 8px;
 }
 
 .div-parceiros-seja {
@@ -601,12 +600,42 @@ editais.html
 }
 
 /* cursos.html */
+.btn-todos {
+  border: 3px solid #FF8A00;
+}
+
+.tag-todos {
+  background-color: #FF8A00;
+}
+
+.btn-aberto {
+  border: 3px solid #A0C044;
+}
+
+.tag-aberto {
+  background-color: #A0C044;
+}
+
+.btn-andamento {
+  border: 3px solid #008DD4;
+}
+
+.btn-concluido {
+  border: 3px solid #CB579E;
+}
+
 .nav-cursos .navbar-brand {
   gap: 8px;
+  color: #5C6471;
+  font-weight: 700;
+}
+.nav-cursos .navbar-brand span {
+  color: #00446B;
 }
 .nav-cursos .nav-link {
   color: #a5adbb;
   font-weight: #a5adbb;
+  font-weight: 700;
 }
 .nav-cursos .nav-link.active {
   color: #00446b;
@@ -637,8 +666,7 @@ editais.html
   content: "\f282";
 }
 .tabs-cursos img {
-  width: 400px;
-  height: 300px;
+  aspect-ratio: 16/9;
   object-fit: cover;
   border-radius: 8px;
 }
